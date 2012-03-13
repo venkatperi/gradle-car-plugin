@@ -25,16 +25,18 @@ import org.gradle.api.file.FileCopyDetails
 import org.gradle.api.internal.file.collections.FileTreeAdapter
 import org.gradle.api.internal.file.collections.MapFileTree
 import org.gradle.api.internal.file.copy.CopySpecImpl
+import org.gradle.api.tasks.StopActionException
 import org.gradle.api.tasks.bundling.Zip
 import org.gradle.util.ConfigureUtil
-import org.gradle.api.tasks.StopActionException
 
 /**
  * Assembles a CAR archive.
  */
 class Car extends Zip {
     public static final String DEFAULT_EXTENSION = 'car'
-    private static final String SETTINGS = 'msbuild.settings'
+    private static final String SETTINGS = 'settings'
+    private static final String CAR_DIR = 'build/tmp/car'
+    private static final String META_DIR = '.meta'
 
     private Manifest manifest
     private final CopySpecImpl metaInf
@@ -47,7 +49,7 @@ class Car extends Zip {
         manifest = new DefaultManifest(project.fileResolver)
 
         // Add these as separate specs, so they are not affected by the changes to the main spec
-        metaInf = copyAction.rootSpec.addFirst().into('.meta')
+        metaInf = copyAction.rootSpec.addFirst().into(META_DIR)
         metaInf.addChild().from {
             MapFileTree manifestSource = new MapFileTree(temporaryDirFactory)
             manifestSource.add('car.manifest') {
@@ -58,7 +60,7 @@ class Car extends Zip {
             return new FileTreeAdapter(manifestSource)
         }
 
-        copyAction.from 'build/tmp/car'
+        copyAction.from CAR_DIR
 
         copyAction.mainSpec.eachFile { FileCopyDetails details ->
             if (details.path.contains('car.manifest')) {
@@ -66,18 +68,20 @@ class Car extends Zip {
             }
         }
 
-        try{
-        //set default params
-        manifest.attributes(['group': project.group, 'version': project.version, 'description': project.description])
+        try {
+            //set default params
+            manifest.attributes(['group': project.group, 'version': project.version, 'description': project.description])
 
-        manifest.attributes(['arch': project.arch,
-                'type': project.type,
-                'buildConfig': project.buildConfig,
-                'crt': project.crt,
-                'call': project.call], SETTINGS)
+            manifest.attributes(['arch': project.arch,
+                    'type': project.type,
+                    'buildConfig': project.buildConfig,
+                    'crt': project.crt,
+                    'call': project.call], SETTINGS)
         }
-        catch (MissingPropertyException e){
-            throw new StopActionException("Property not set: " + e.property)
+        catch (e) {
+            def err = "Error initializing manifest: " + e.message
+            logger.error err
+            throw new StopActionException(err)
         }
     }
 

@@ -67,103 +67,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DefaultManifest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/internal/DefaultManifest.java">
+      <file leaf-file-name="LibsListTask.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/LibsListTask.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="27" selection-start="2307" selection-end="2307" vertical-scroll-proportion="0.0">
+            <state line="96" column="40" selection-start="3335" selection-end="3335" vertical-scroll-proportion="0.54744524">
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1437#1456#0" expanded="true" />
-                <element signature="e#1594#1614#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuotedString.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/internal/QuotedString.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="18" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Map.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.7.0_01/src.zip!/java/util/Map.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="6" selection-start="4969" selection-end="4969" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Manifest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/Manifest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="31" selection-start="2199" selection-end="2199" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Car.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/Car.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="75" selection-start="2947" selection-end="2947" vertical-scroll-proportion="0.9200969">
-              <folding>
-                <element signature="e#701#763#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CarPlugin.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/CarPlugin.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="31" selection-start="1862" selection-end="1862" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#46#82#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ManifestMergeDetails.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/ManifestMergeDetails.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="17" selection-start="763" selection-end="763" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CarPluginConvention.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/CarPluginConvention.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="7" selection-start="2195" selection-end="2195" vertical-scroll-proportion="-5.419355">
-              <folding>
-                <element signature="e#662#724#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultManifestMergeDetails.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/internal/DefaultManifestMergeDetails.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="14" selection-start="1687" selection-end="1687" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultManifestMergeSpec.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/internal/DefaultManifestMergeSpec.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="77" selection-start="4837" selection-end="4837" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#5903#0" expanded="true" />
+                <element signature="e#710#781#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -185,21 +94,21 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/main/groovy/org/gradle/api/plugins/BasePlugin.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/LibrariesConvention.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/CarArtifacts.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/LibrariesTask.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/UnpackLibrariesTask.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/CarPlugin.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/org/gradle/api/java/archives/internal/DefaultManifest.java" />
         <option value="$PROJECT_DIR$/src/main/groovy/org/gradle/api/java/archives/Manifest.java" />
         <option value="$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/Manifest.java" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/LibsListTask.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/CarPluginConvention.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/internal/ToStringHelper.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/internal/DefaultManifestMergeSpec.java" />
-        <option value="$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/internal/DefaultManifest.java" />
         <option value="$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/internal/QuotedString.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/CarPluginConvention.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/LibrariesConvention.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/Car.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/internal/DefaultManifest.java" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/CarPlugin.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/UnpackLibrariesTask.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/CarArtifacts.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/LibsListTask.groovy" />
       </list>
     </option>
   </component>
@@ -279,139 +188,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.github.venkatperi.gradlecarplugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.github.venkatperi.gradlecarplugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.github.venkatperi.gradle-car-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.github.venkatperi.gradlecarplugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.github.venkatperi.gradle-car-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="groovy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.github.venkatperi.gradlecarplugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.github.venkatperi.gradle-car-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gradle-plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.github.venkatperi.gradlecarplugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.github.venkatperi.gradle-car-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="groovy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gradle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.github.venkatperi.gradlecarplugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.github.venkatperi.gradle-car-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="groovy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gradle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -599,35 +375,142 @@
               <option name="myItemId" value="com.github.venkatperi.gradle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="api.java.archives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+              <option name="myItemId" value="com.github.venkatperi.gradlecarplugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="com.github.venkatperi.gradlecarplugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="car" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+              <option name="myItemId" value="com.github.venkatperi.gradle-car-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.github.venkatperi.gradlecarplugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="com.github.venkatperi.gradle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+              <option name="myItemId" value="com.github.venkatperi.gradle-car-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="api.java.archives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="internal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="groovy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.github.venkatperi.gradlecarplugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.github.venkatperi.gradle-car-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gradle-plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.github.venkatperi.gradlecarplugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.github.venkatperi.gradle-car-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="groovy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gradle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.github.venkatperi.gradlecarplugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.github.venkatperi.gradle-car-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="groovy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gradle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -645,13 +528,13 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="Downloaded.Files.Path" value="C:\rrdev\vperi\repos\com.github.venkatperi.gradle-car-plugin\lib" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="Downloaded.Files.Path" value="C:\rrdev\vperi\repos\com.github.venkatperi.gradle-car-plugin\lib" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -665,7 +548,10 @@
       <recent name="C:\rrdev\vperi\repos\com.github.venkatperi.gradle-car-plugin\src\main\groovy\com\github\venkatperi\gradle" />
     </key>
     <key name="GrIntroduceConstantDialog.RECENTS_KEY">
+      <recent name="com.github.venkatperi.gradle.plugins.LibsListTask" />
+      <recent name="com.github.venkatperi.gradle.plugins.LibrariesConvention" />
       <recent name="com.github.venkatperi.gradle.plugins.Car" />
+      <recent name="com.github.venkatperi.gradle.plugins.CarPlugin" />
       <recent name="com.github.venkatperi.gradle.api.java.archives.internal.QuotedString" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -728,24 +614,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -771,6 +639,24 @@
       <envs />
       <properties />
       <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -863,22 +749,22 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881355" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978564" sideWeight="0.6700565" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973205" sideWeight="0.67118645" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24866024" sideWeight="0.6706468" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299435" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881355" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24866024" sideWeight="0.6706468" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -938,126 +824,112 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.IdeaIC11/system/compiler/com.github.venkatperi.gradlecarplugin.com.github.venkatperi.gradlecarplugind2b19428/.generated/groovyStubs/com.github.venkatperi.gradlecarplugind2b19428/car/production/org/gradle/api/tasks/bundling/Jar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="7" selection-start="162" selection-end="162" vertical-scroll-proportion="0.24581006">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/ManifestException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="13" selection-start="912" selection-end="912" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/ManifestMergeSpec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="17" selection-start="835" selection-end="835" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/internal/DefaultAttributes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="16" selection-start="2886" selection-end="2886" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_01/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="6" selection-start="4969" selection-end="4969" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/Attributes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="17" selection-start="799" selection-end="799" vertical-scroll-proportion="0.41121495">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/CarPluginConvention.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="7" selection-start="2195" selection-end="2195" vertical-scroll-proportion="-5.419355">
-          <folding>
-            <element signature="e#662#724#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="24" column="17" selection-start="799" selection-end="799" vertical-scroll-proportion="0.41121495" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_01/src.zip!/java/util/LinkedHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="196" column="11" selection-start="8135" selection-end="8135" vertical-scroll-proportion="0.33271027">
-          <folding />
-        </state>
+        <state line="196" column="11" selection-start="8135" selection-end="8135" vertical-scroll-proportion="0.33271027" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/internal/DefaultManifestMergeSpec.java">
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/Manifest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="77" selection-start="4837" selection-end="4837" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#5903#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/internal/DefaultManifestMergeDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="14" selection-start="1687" selection-end="1687" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/ManifestMergeDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="17" selection-start="763" selection-end="763" vertical-scroll-proportion="0.0">
+        <state line="58" column="31" selection-start="2199" selection-end="2199" vertical-scroll-proportion="0.023255814">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/internal/QuotedString.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="18" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.0">
+        <state line="39" column="18" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.52517986">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/ManifestMergeDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="17" selection-start="763" selection-end="763" vertical-scroll-proportion="0.022610484">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/internal/DefaultManifestMergeDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="14" selection-start="1687" selection-end="1687" vertical-scroll-proportion="0.6382323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/UnpackLibrariesTask.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="24" selection-start="811" selection-end="817" vertical-scroll-proportion="0.50605327">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/LibrariesConvention.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="7" selection-start="1434" selection-end="1434" vertical-scroll-proportion="0.9322034">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/github/venkatperi/gradle/plugins/CarTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="6" selection-start="794" selection-end="794" vertical-scroll-proportion="0.5416178">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/CarPluginConvention.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="10" selection-start="2548" selection-end="2548" vertical-scroll-proportion="0.29191092">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/CarPlugin.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="31" selection-start="1862" selection-end="1862" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#46#82#0" expanded="true" />
-          </folding>
+        <state line="76" column="30" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.60238093">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/Manifest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/internal/DefaultManifestMergeSpec.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="31" selection-start="2199" selection-end="2199" vertical-scroll-proportion="0.0">
+        <state line="95" column="77" selection-start="4837" selection-end="4837" vertical-scroll-proportion="0.3094959">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/api/java/archives/internal/DefaultManifest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="27" selection-start="2307" selection-end="2307" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1437#1456#0" expanded="true" />
-            <element signature="e#1594#1614#0" expanded="true" />
-          </folding>
+        <state line="255" column="69" selection-start="9220" selection-end="9220" vertical-scroll-proportion="1.0574443">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/CarArtifacts.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="664" selection-end="664" vertical-scroll-proportion="0.46424386">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/Car.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="75" selection-start="2947" selection-end="2947" vertical-scroll-proportion="0.9200969">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/com/github/venkatperi/gradle/plugins/LibsListTask.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="40" selection-start="3335" selection-end="3335" vertical-scroll-proportion="0.54744524">
           <folding>
-            <element signature="e#701#763#0" expanded="true" />
+            <element signature="e#710#781#0" expanded="true" />
           </folding>
         </state>
       </provider>

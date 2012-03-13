@@ -1,10 +1,3 @@
-package com.github.venkatperi.gradle.plugins
-
-import com.github.venkatperi.gradle.api.java.archives.internal.DefaultManifest
-import org.apache.commons.io.FilenameUtils
-import org.gradle.api.DefaultTask
-import org.gradle.api.tasks.TaskAction
-
 /*
  * Copyright 2012 the original author or authors.
  *
@@ -20,8 +13,19 @@ import org.gradle.api.tasks.TaskAction
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * @author Venkat Peri 
+ * @author Venkat Peri. RemoteReality Corp.
  */
+
+package com.github.venkatperi.gradle.plugins
+
+import com.github.venkatperi.gradle.api.java.archives.ManifestException
+import com.github.venkatperi.gradle.api.java.archives.internal.DefaultManifest
+import org.apache.commons.io.FilenameUtils
+import org.gradle.api.DefaultTask
+import org.gradle.api.GradleException
+import org.gradle.api.tasks.TaskAction
+import org.gradle.api.tasks.TaskExecutionException
+
 class LibsListTask extends DefaultTask {
 
     static final String COMPILE_SECTION = 'compile'
@@ -30,10 +34,11 @@ class LibsListTask extends DefaultTask {
     static final String CXX_FLAGS = 'cxxflags'
     static final String FLAGS = 'flags'
     static final String LIBS = 'libs'
+    static final String SETTINGS = 'settings'
 
-    LibrariesConvention convention =  project.extensions.libraries
+    LibrariesConvention convention = project.extensions.libraries
 
-    def UnpackLibrariesTask(){
+    def UnpackLibrariesTask() {
         inputs.files convention.configuration.files
         outputs.dir convention.pkgDirName
     }
@@ -45,10 +50,7 @@ class LibsListTask extends DefaultTask {
      * @param c
      * @return
      */
-    def addItems(Object v1, List l, Closure c) {
-        Map bindingMap = [:].withDefault { it }
-        def v = new GroovyShell(bindingMap as Binding).evaluate(v1)
-
+    def void addListItems(Object v, List l, Closure c) {
         if (v instanceof String) {
             l.add c(v)
         }
@@ -63,30 +65,63 @@ class LibsListTask extends DefaultTask {
      * This task's action
      */
     @TaskAction
-    public void libs() {
+    def doIt() {
         description 'Assemble list of compiler/linker settings from dependency packages'
 
         project.configurations.compile.files.each {
             def name = FilenameUtils.removeExtension(it.name);
             def dir = convention.pkgDirName + '/' + name
+            outputs.files new File(dir)
 
             def mf = new File(dir + '/.meta/car.manifest')
 
             if (mf.exists()) {
+                logger.debug "Processing package $name"
 
                 def manifest = new DefaultManifest(project.fileResolver)
                 manifest.read(mf.path)
                 def sections = manifest.getSections()
 
+                //verify that this package has compatiable settings with the current project
+                try {
+                    def s = sections.get('settings')
+                    if (s == null) {
+                        throw new ManifestException("Package $name: 'settings' section missing")
+                    }
+
+                    ['arch', 'buildConfig', 'crt', 'call'].each {
+                        logger.debug "Checking package property $it"
+                        def v = s.get(it)
+                        def v1 = project[it]
+                        if (v != v1) {
+                            def err = ":Settings mismatch found for $it in package $name: Package: $v, Project: $v1"
+                            logger.warn err
+                        }
+                    }
+                }
+                catch (GradleException e) {
+                    def err = "Error reading 'settings' section of manifest for package $name: " + e.message
+                    logger.error err
+                    throw e
+                }
+                catch (e) {
+                    def err = "Error reading 'settings' section of manifest for package $name: " + e.message
+                    logger.error err
+                    throw new TaskExecutionException(err)
+                }
+
+
                 if (sections.containsKey(COMPILE_SECTION)) {
                     def s = sections.get(COMPILE_SECTION)
 
                     if (s.containsKey(DIRS)) {
-                        addItems s.get(DIRS), convention.incDirs, { val -> "$dir/$val"}
+                        Set v1 = s.get(DIRS)
+                        convention.incDirs.addAll v1.collect { "$dir/$it" }
                     }
 
                     if (s.containsKey(CXX_FLAGS)) {
-                        addItems s.get(CXX_FLAGS), convention.cxxflags, { val -> val }
+                        Set v1 = s.get(DIRS)
+                        convention.cxxflags.addAll v1
                     }
                 }
 
@@ -94,15 +129,19 @@ class LibsListTask extends DefaultTask {
                     def s = sections.get(LINK_SECTION)
 
                     if (s.containsKey(DIRS)) {
-                        addItems s.get(DIRS), convention.libDirs, { val -> "$dir/$val"}
+                        Set v1 = s.get(DIRS)
+                        convention.libDirs.addAll v1.collect { "$dir/$it" }
                     }
 
                     if (s.containsKey(FLAGS)) {
-                        addItems s.get(FLAGS), convention.linkFlags, { val -> val }
+                        Set v1 = s.get(FLAGS)
+                        convention.linkFlags.addAll v1
+
                     }
 
                     if (s.containsKey(LIBS)) {
-                        addItems s.get(LIBS), convention.libs, { val -> val + '.lib'}
+                        Set v1 = s.get(LIBS)
+                        convention.cxxflags.addAll v1.collect { it + '.lib'}
                     }
                 }
             }

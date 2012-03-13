@@ -1,7 +1,3 @@
-package com.github.venkatperi.gradle.plugins
-
-import org.gradle.api.file.ConfigurableFileCollection
-
 /*
  * Copyright 2012 the original author or authors.
  *
@@ -17,8 +13,14 @@ import org.gradle.api.file.ConfigurableFileCollection
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * @author Venkat Peri 
+ * @author Venkat Peri. RemoteReality Corp.
  */
+
+package com.github.venkatperi.gradle.plugins
+
+import org.gradle.api.file.ConfigurableFileCollection
+
+
 class CarArtifacts {
 
     /**

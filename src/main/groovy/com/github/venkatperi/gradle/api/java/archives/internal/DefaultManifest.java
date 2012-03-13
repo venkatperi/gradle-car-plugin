@@ -16,15 +16,16 @@
 
 package com.github.venkatperi.gradle.api.java.archives.internal;
 
+import com.github.venkatperi.gradle.api.java.archives.Attributes;
+import com.github.venkatperi.gradle.api.java.archives.ManifestMergeSpec;
 import groovy.lang.Closure;
+import groovy.lang.GroovyShell;
 import org.apache.tools.ant.taskdefs.Manifest;
 import org.apache.tools.ant.taskdefs.Manifest.Attribute;
 import org.apache.tools.ant.taskdefs.Manifest.Section;
 import org.apache.tools.ant.taskdefs.ManifestException;
 import org.gradle.api.UncheckedIOException;
 import org.gradle.api.internal.file.FileResolver;
-import com.github.venkatperi.gradle.api.java.archives.Attributes;
-import com.github.venkatperi.gradle.api.java.archives.ManifestMergeSpec;
 import org.gradle.util.ConfigureUtil;
 
 import java.io.*;
@@ -221,11 +222,13 @@ public class DefaultManifest implements com.github.venkatperi.gradle.api.java.ar
     }
 
     private void addAntManifestToAttributes(Manifest antManifest) {
+        GroovyShell sh = new GroovyShell();
+                
         Enumeration attributeKeys = antManifest.getMainSection().getAttributeKeys();
         while (attributeKeys.hasMoreElements()) {
             String key = (String) attributeKeys.nextElement();
             String attributeKey = antManifest.getMainSection().getAttribute(key).getName();
-            attributes.put(attributeKey, antManifest.getMainSection().getAttributeValue(key));
+            attributes.put(attributeKey, sh.evaluate(antManifest.getMainSection().getAttributeValue(key)));
         }
         attributes.put("Manifest-Version", antManifest.getManifestVersion());
     }
@@ -239,13 +242,15 @@ public class DefaultManifest implements com.github.venkatperi.gradle.api.java.ar
     }
 
     private void addAntManifestToSection(Manifest antManifest, String sectionName) {
+        GroovyShell sh = new GroovyShell();
+
         DefaultAttributes attributes = new DefaultAttributes();
         sections.put(sectionName, attributes);
         Enumeration attributeKeys = antManifest.getSection(sectionName).getAttributeKeys();
         while (attributeKeys.hasMoreElements()) {
             String key = (String) attributeKeys.nextElement();
             String attributeKey = antManifest.getSection(sectionName).getAttribute(key).getName();
-            attributes.put(attributeKey, antManifest.getSection(sectionName).getAttributeValue(key));
+            attributes.put(attributeKey, sh.evaluate(antManifest.getSection(sectionName).getAttributeValue(key)));
         }
     }
 }

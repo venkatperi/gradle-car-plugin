@@ -25,37 +25,38 @@ class LibrariesConvention {
     /**
      * Specify the configuration that will be used for resolving package dependencies. Default is 'compile'
      */
+    private static final String PKG_DIR = 'build/pkg'
     Configuration configuration
 
     /**
       * list of include directories are stored here
      */
-    List<String> incDirs = []
+    Set<String> incDirs = []
 
     /**
      * Resolved list of compiler flags stored here
      */
-    List<String> cxxflags = []
+    Set<String> cxxflags = []
 
     /**
      * list of directories to search for libraries
      */
-    List<String> libDirs = []
+    Set<String> libDirs = []
 
     /**
      * list of libs to be linked against
      */
-    List<String> libs = []
+    Set<String> libs = []
 
     /**
      * list of linker flags
      */
-    List<String> linkFlags = []
+    Set<String> linkFlags = []
 
     /**
      * directory where packages are expanded and referenced for compile/link
      */
-    String pkgDirName = 'build/pkg'
+    String pkgDirName = PKG_DIR
 
     /**
      * Constuctor

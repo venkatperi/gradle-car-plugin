@@ -26,14 +26,15 @@ import org.gradle.api.plugins.BasePlugin
 
 class CarPlugin extends BasePlugin {
 
-    /**
-     *
-     * @param project
-     */
+    private static final String STRUCTURE = 'configure'
+    private static final String UNPACK = 'unpack'
+    private static final String LIBS = 'libs'
+    private static final String CAR = 'car'
+
     @Override
     def void apply(Project project) {
 
-        configureListToString()
+        //configureListToString()
 
         def javaConvention = new CarPluginConvention(project);
         project.getConvention().getPlugins().put("car", javaConvention);
@@ -65,8 +66,8 @@ class CarPlugin extends BasePlugin {
         def convention = new LibrariesConvention(project)
         project.extensions.libraries = convention
 
-        project.task('unpack', type: UnpackLibrariesTask)
-        project.task('libs', type: LibsListTask, dependsOn: 'unpack')
+        project.task(UNPACK, type: UnpackLibrariesTask, group: STRUCTURE, description: 'Unpack dependency libraries')
+        project.task(LIBS, type: LibsListTask, dependsOn: UNPACK, group: STRUCTURE, description: 'Scan dependency libraries for include/lib/flag settings')
     }
 
     /**
@@ -77,7 +78,7 @@ class CarPlugin extends BasePlugin {
     private void configureArchives(final Project project, final CarPluginConvention pluginConvention) {
         // project.getTasks().getByName(JavaBasePlugin.CHECK_TASK_NAME).dependsOn(TEST_TASK_NAME);
 
-        Car jar = project.getTasks().add('car', Car.class);
+        Car jar = project.getTasks().add(CAR, Car.class);
         jar.getManifest().from(pluginConvention.getManifest());
         jar.setDescription("Assembles a CAR archive.");
         jar.setGroup(BasePlugin.BUILD_GROUP);

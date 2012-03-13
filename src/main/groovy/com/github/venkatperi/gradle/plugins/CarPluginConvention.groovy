@@ -39,7 +39,7 @@ public class CarPluginConvention {
 
     String dependencyCacheDirName
 
-    String pkgDirName
+    //String pkgDirName
 
     /**
      * The name of the docs directory. Can be a name or a path relative to the build dir.
@@ -75,7 +75,7 @@ public class CarPluginConvention {
         def instantiator = project.services.get(Instantiator)
         sourceSets = instantiator.newInstance(DefaultSourceSetContainer.class, project.fileResolver, project.tasks, instantiator)
         dependencyCacheDirName = 'dependency-cache'
-        pkgDirName = "build/pkg"
+        //pkgDirName = "build/pkg"
         docsDirName = 'docs'
         testResultsDirName = 'test-results'
         testReportDirName = 'tests'
